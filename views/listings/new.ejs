@@ -1,0 +1,61 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <div class="row">
+   <div class="col-8 offset-2">
+    <h2>Create a new Listing</h2>
+    <form 
+        method="POST" 
+        action="/listings" 
+        enctype="multipart/form-data" 
+        novalidate 
+        class="needs-validation"
+     >
+        <div class="mb-3">
+            <lable for="title" class="form-lable">Title</lable>
+            <input name="listing[title]" 
+              placeholder="Add a catchy Title"  
+              class="form-control" 
+              type="text" 
+              required
+            />
+            <div class="valid-feedback">Titles Look`s Good!</div>
+        </div>
+        <div class="mb-3">
+            <lable for="description" class="form-lable">Description </lable>
+            <textarea name="listing[description]"  class="form-control" required ></textarea> 
+            <div class="invalid-feedback">Please Enter a Short Description</div>
+        </div>
+        
+        <div class="mb-3">
+            <lable for="image" class="form-lable">Upload Listing Image</lable>
+            <input name="listing[image]" class="form-control"  type="file" required />
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+             <lable for="price" class="form-lable">Price</lable>
+             <input name="listing[price]" class="form-control" placeholder="1499" required />
+               <div class="invalid-feedback">Please Enter a valid Prise!</div>
+            </div>
+            <div class="mb-3 col-md-8">
+             <lable for="country" class="form-lable" required>Country</lable>
+             <input name="listing[country]" class="form-control" placeholder="India" type="text" required/>
+              <div class="invalid-feedback">Please Enter a Country!</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+             <lable for="location" class="form-lable">Location</lable>
+             <input name="listing[location]" class="form-control" placeholder="Simla" type="text" required />
+             <div class="invalid-feedback">Please Enter a valid Location!</div>
+        </div>
+        
+        <br><br>
+        <button class="btn btn-dark add-btn">
+            Add
+        </button>
+    </form>
+   </div>
+  </div>  
+  <br>
+</body>
+</html>
