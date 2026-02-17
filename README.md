@@ -1,6 +1,14 @@
 # StayFinder 🏠
 
+<<<<<<< HEAD
 StayFinder is a full-stack web application designed for booking and managing stays. Users can browse listings, view detailed stay information, leave reviews, and manage their own property listings.
+=======
+StayFinder is a full-stack property rental web application inspired by modern accommodation marketplaces like Airbnb.
+
+The platform allows users to explore rental properties, view detailed listings, upload property images, and manage bookings through a secure and responsive interface.
+
+This project demonstrates backend development, RESTful routing, authentication logic, and database integration using Node.js and MongoDB.
+>>>>>>> cf9993f3bda7bec5f992aafd69ead8f2b1d85a0d
 
 ## 🚀 Features
 
