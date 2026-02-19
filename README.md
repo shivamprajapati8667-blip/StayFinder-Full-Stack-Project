@@ -1,6 +1,6 @@
 # StayFinder 🏠
 
-<<<<<<< HEAD
+
 StayFinder is a full-stack web application designed for booking and managing stays. Users can browse listings, view detailed stay information, leave reviews, and manage their own property listings.
 =======
 StayFinder is a full-stack property rental web application inspired by modern accommodation marketplaces like Airbnb.
