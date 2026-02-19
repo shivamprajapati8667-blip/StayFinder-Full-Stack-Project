@@ -161,3 +161,9 @@ body{
   display: flex;
   align-items: center;
 }
+
+
+#map {
+    height: 400px;
+    margin-top: 20px;
+  }
