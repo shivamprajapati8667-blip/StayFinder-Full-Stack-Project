@@ -1,81 +1,100 @@
-# StayFinder 🏠
+# 🌍 Wanderlust – Full-Stack Stay Booking Project
 
+[![Node.js](https://img.shields.io/badge/Node.js-22.19.0-43853d.svg)](https://nodejs.org/)  
+[![Express.js](https://img.shields.io/badge/Express.js-5.1.0-000000.svg)](https://expressjs.com/)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg)](https://www.mongodb.com/atlas/database)  
+[![EJS](https://img.shields.io/badge/EJS-Templates-F57C00.svg)](https://ejs.co/)  
+[![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Maps-2C8D40.svg)](https://www.openstreetmap.org/)  
+[![Cloudinary](https://img.shields.io/badge/Cloudinary-Media-0033CC.svg)](https://cloudinary.com/)  
+[![License: ISC](https://img.shields.io/badge/License-ISC-ff5a5f.svg)](https://opensource.org/licenses/ISC)
 
-StayFinder is a full-stack web application designed for booking and managing stays. Users can browse listings, view detailed stay information, leave reviews, and manage their own property listings.
-=======
-StayFinder is a full-stack property rental web application inspired by modern accommodation marketplaces like Airbnb.
+**Wanderlust** is a **full-stack project** that allows users to discover, book, and review unique stays, while hosts can list and manage their properties. The project uses **Node.js, Express, MongoDB, EJS templates, and OpenStreetMap** for geolocation features.  
 
-The platform allows users to explore rental properties, view detailed listings, upload property images, and manage bookings through a secure and responsive interface.
+---
 
-This project demonstrates backend development, RESTful routing, authentication logic, and database integration using Node.js and MongoDB.
+## ✨ Why Wanderlust?
 
+- 🗺️ **Interactive Maps** to explore listings before booking.  
+- 🏠 **Host Your Space** with photos, pricing, and detailed descriptions.  
+- 💬 **Community Reviews** for trusted feedback and transparent ratings.  
+- 📱 **Mobile-First Design** for a smooth experience on any device.  
 
-## 🚀 Features
+---
 
-- **User Authentication**: Secure signup and login using Passport.js.
-- **Listing Management**: Users can create, update, and delete stay listings.
-- **Image Uploads**: Integrated with Cloudinary for robust image storage and management.
-- **Review System**: Users can post and delete reviews for different listings.
-- **Responsive UI**: A clean and dynamic user interface built with EJS and custom CSS.
-- **Search & Filter**: Find the perfect stay using built-in search functionality.
+## 🌟 Core Features
+
+- **Secure Authentication** with Passport.js  
+- **Dynamic EJS Templates** for all pages  
+- **Precise Geocoding** using OpenStreetMap (Nominatim)  
+- **Media Management** with Cloudinary  
+- **Real-Time Feedback & Notifications** using Connect-Flash  
+- **Responsive UI** built with Bootstrap 5  
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: EJS (Embedded JavaScript), HTML5, CSS3, JavaScript.
-- **Backend**: Node.js, Express.js.
-- **Database**: MongoDB (Mongoose ODM).
-- **Authentication**: Passport.js with Local Strategy.
-- **Media Storage**: Cloudinary (via Multer).
-- **Validation**: Joi (Schema-based validation).
+**Backend**  
+- Node.js + Express.js (v5.1.0)  
+- MongoDB with Mongoose  
+- Passport.js for authentication  
+- Multer + Cloudinary for file uploads  
 
-## 📋 Prerequisites
+**Frontend**  
+- **EJS templates** for dynamic pages  
+- Bootstrap 5 + Custom CSS  
+- Vanilla JS & Leaflet.js for interactive maps  
+- FontAwesome for icons  
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16.0.0 or higher)
-- [MongoDB](https://www.mongodb.com/try/download/community) (Local or Atlas instance)
+---
 
-## ⚙️ Setup & Installation
+## 🚀 Quick Start
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/shivamprajapati8667-blip/StayFinder-Full-Stack-Project.git
-   cd StayFinder-Full-Stack-Project
-   ```
+### Prerequisites
+- Node.js v16+  
+- MongoDB (Local or Atlas)  
+- Cloudinary account  
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Setup
+```bash
+# Clone the repo
+git clone https://github.com/shivamprajapati8667-blip/StayFinder-Full-Stack-Project.git
+cd StayFinder-Full-Stack-Project
 
-3. **Configure Environment Variables**:
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   CLOUD_NAME=your_cloudinary_name
-   CLOUD_API_KEY=your_cloudinary_api_key
-   CLOUD_API_SECRET=your_cloudinary_api_secret
-   ATLASDB_URL=your_mongodb_connection_string
-   SECRET=your_session_secret
-   ```
+# Install dependencies
+npm install
 
-4. **Run the application**:
-   ```bash
-   node app.js
-   ```
-   The server will start on `http://localhost:8080`.
+# Create .env file in root:
+CLOUD_NAME=your_cloudinary_name
+CLOUD_API_KEY=your_api_key
+CLOUD_API_SECRET=your_api_secret
+ATLASDB_URL=your_mongodb_connection_string
+SECRET=your_session_secret
+
+# (Optional) Seed data
+node init/index.js
+
+# Run the app
+node app.js
+
 
 ## 📂 Project Structure
 
-- `/controllers`: Request handlers for listings, reviews, and users.
-- `/models`: Mongoose schemas for Listings, Reviews, and Users.
-- `/public`: Static assets (fonts, images, scripts, styles).
-- `/routes`: Express route definitions.
-- `/utils`: Helper functions and error handling classes.
-- `/views`: EJS templates for rendering the UI.
+```text
+Wanderlust/
+├── controllers/    # Project Logic (CRUD, Geocoding)
+├── models/         # Database Blueprints (Listing, Review, User)
+├── routes/         # URL Access Points
+├── views/          # EJS Pages & Partials
+├── public/         # Global Styles, Scripts & Images
+└── utils/          # Middleware & Error Formatting
+```
 
-## 🤝 Contributing
+---
+## � License
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+This project is open-source and available under the [ISC License](file:///c:/Users/Shivam/alpha/MAJORPROJECT/LICENSE).
 
-## 📄 License
+---
 
-This project is licensed under the [ISC](https://opensource.org/licenses/ISC) License.
+**Wanderlust** - Built with ❤️ by [Shivam Prajapati](https://github.com/shivamprajapati8667-blip) 🚀
