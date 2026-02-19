@@ -17,7 +17,7 @@
 - 🗺️ **Interactive Maps** to explore listings before booking.  
 - 🏠 **Host Your Space** with photos, pricing, and detailed descriptions.  
 - 💬 **Community Reviews** for trusted feedback and transparent ratings.  
-- 📱 **Mobile-First Design** for a smooth experience on any device.  
+
 
 ---
 
